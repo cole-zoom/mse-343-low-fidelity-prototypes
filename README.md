@@ -1,140 +1,154 @@
-# Design Process Prototypes - MSE 343
+# The Most Over-Engineered Homework Assignment Ever
 
-A Next.js web application showcasing 4 interactive prototypes, inspired by the iterative design process of establishing requirements, designing alternatives, prototyping, and evaluation.
+Welcome to our absolutely serious and definitely not thrown-together-at-the-last-minute collection of low-fidelity prototypes for MSE 343 (Human-Computer Interaction). This is a Next.js web app that exists solely to house four (4) interactive prototypes that we made for class. Yes, we built a whole website to display homework. No, we're not okay.
 
-## 🚀 Features
+## What Even Is This
 
-- **Modern Tech Stack**: Built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4
-- **Beautiful Homepage**: Displays the design process cycle with visual cards for each stage
-- **4 Interactive Prototypes**:
-  1. **Locaylo Stop Motion** - Travel guide matching app with paper/stop-motion aesthetic
-  2. **Pokemon GO** - Location-based local/tourist connection platform
-  3. **Roman Roulette** - Random activity matcher with Roman theme
-  4. **Tinder** - Activity-based social connection app (swipe interface)
-- **Navigation Component**: Hamburger menu with smooth animations for easy routing
-- **Responsive Design**: Works seamlessly across devices
+This is a web app showcases 4 prototypes that range from "questionably functional" to "surprisingly decent" and everything in between. We were supposed to explore the iterative design process of establishing requirements, designing alternatives, prototyping, and evaluation. Instead, we made these.
 
-## 📁 Project Structure
+## The Prototypes (In Order of Absurdity)
+
+1. **Locaylo Stop Motion** - A travel guide app that looks like someone's arts and crafts project. Features hand-drawn borders and a paper texture that screams "I discovered CSS filters."
+
+2. **Pokemon GO (LocalCatch)** - Because nothing says "original idea" like taking Pokemon GO and making it about meeting strangers. It's like Pokemon GO but with more social anxiety.
+
+3. **Roman Roulette (SPQR Matcher)** - Random activity matcher but make it ancient Rome. Why? Because at 2 AM, Roman Empire jokes are peak comedy.
+
+4. **Tinder (Activity Finder)** - We literally just took Tinder's swipe mechanics and applied it to activities. Revolutionary. Groundbreaking. Probably already exists.
+
+## Tech Stack (AKA We Might Have Gone Overboard)
+
+- Next.js 16 (because regular React wasn't fancy enough)
+- React 19 (the bleeding edge, baby)
+- TypeScript (so we can pretend we know what we're doing)
+- Tailwind CSS v4 (utility classes go brrr)
+- Framer Motion (for animations that nobody asked for)
+- Lucide React (pretty icons that make it look professional)
+
+Yes, this is overkill for a class project. Yes, we know. No, we won't apologize.
+
+## Project Structure (For the Organized Chaos)
 
 ```
 Milestone_4/
 ├── app/
-│   ├── layout.tsx              # Root layout with navigation
-│   ├── page.tsx                # Homepage with design process
-│   ├── globals.css             # Global styles + Tailwind
-│   ├── locaylo-stop-motion/    # Prototype 1
-│   ├── pokemon-go/             # Prototype 2
-│   ├── roman-roulette/         # Prototype 3
-│   └── tinder/                 # Prototype 4
+│   ├── layout.tsx              # The thing that wraps everything
+│   ├── page.tsx                # Homepage with fancy design process cards
+│   ├── globals.css             # Where the magic (read: hacks) happen
+│   ├── locaylo-stop-motion/    # Prototype 1: Arts & Crafts Edition
+│   ├── pokemon-go/             # Prototype 2: Pokemon Lawsuit Incoming
+│   ├── roman-roulette/         # Prototype 3: SPQR Your Activities
+│   └── tinder/                 # Prototype 4: Swipe Right on Fun
 ├── components/
-│   └── Navigation.tsx          # Reusable navigation component
-└── Prototypes/                 # Original Vite prototypes (reference)
+│   └── Navigation.tsx          # Hamburger menu (not the food kind)
+└── Prototypes/                 # Original Vite versions (the drafts)
 ```
 
-## 🛠️ Setup & Installation
+## How to Actually Run This Thing
 
-1. **Install dependencies**:
+1. Install dependencies (pray they don't conflict):
    ```bash
    npm install
    ```
 
-2. **Run development server**:
+2. Start the dev server:
    ```bash
    npm run dev
    ```
 
-3. **Open in browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
+3. Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
-## 🎨 Design Philosophy
+4. Marvel at what sleep deprivation can accomplish.
 
-The homepage is inspired by the design thinking process:
+## Features (That Sound More Impressive Than They Are)
 
-1. **Establish Requirements** ✓ - Define user needs and goals
-2. **Design Alternatives** ✏️ - Explore multiple solutions
-3. **Prototype** 🔨 - Build interactive demonstrations
-4. **Evaluate** 📊 - Assess effectiveness through testing
+- **Navigation Component**: A hamburger menu that slides in from the right because we watched one too many UI/UX YouTube videos
+- **Responsive Design**: It works on mobile. Barely. But it works.
+- **Homepage**: Shows the design process cycle with cards that make it look like we understand design theory
+- **Four Whole Prototypes**: Each one demonstrates that we can, in fact, make different things look different
+- **Smooth Animations**: Because if it doesn't animate, did you even try?
 
-Each prototype demonstrates different UI/UX patterns and interaction models, showcasing the iterative nature of design.
+## The "Design Philosophy" (Heavy Air Quotes)
 
-## 🧭 Navigation
+Our homepage pretends to follow the design thinking process:
 
-The app features a hamburger menu in the top-right corner that slides in from the right. It provides:
-- Quick access to the homepage
-- Links to all 4 prototypes
-- Smooth animations and transitions
-- Backdrop overlay for focus
+1. **Establish Requirements** - We asked ourselves "what's the deadline?" and went from there
+2. **Design Alternatives** - Made four different things and called it a day
+3. **Prototype** - You're looking at them. This is it. This is the prototype.
+4. **Evaluate** - That's the professor's job, not ours
 
-## 🎯 Prototypes Overview
+## Prototype Deep Dive (Because Length Matters for Grades)
 
-### 1. Locaylo Stop Motion
-A travel tour guide matching app with a unique paper/stop-motion design aesthetic. Features:
-- Hand-drawn borders and animations
-- Paper texture background
-- Radar animation for finding guides
-- Chat functionality with matched guides
+### Locaylo Stop Motion
+Remember those stop-motion videos from elementary school? We made an app that looks like that. It has:
+- Hand-drawn borders (read: wavy CSS filters)
+- Paper texture background (one Google search away)
+- Radar animation for finding guides (it spins! wow!)
+- Chat functionality (because every app needs chat)
 
-### 2. Pokemon GO (LocalCatch)
-Location-based platform connecting tourists with locals. Features:
-- Interactive map with user pins
-- Role-based system (Tourist/Local)
-- Profile cards with bio information
-- Request to meet functionality
+### Pokemon GO (LocalCatch)
+"What if Pokemon GO but for meeting people?" - a sentence that has definitely been said before. Features:
+- Interactive map with pins (Mapbox API said hi)
+- Role system: be a tourist or a local (choose your fighter)
+- Profile cards with bios (stalk responsibly)
+- "Request to meet" button (for the brave souls)
 
-### 3. Roman Roulette (SPQR Matcher)
-Random activity and companion matcher with a Roman Empire theme. Features:
-- Humorous Roman names and activities
-- Loading animations with changing messages
-- Ancient Roman aesthetic
-- One-click fate consultation
+### Roman Roulette (SPQR Matcher)
+The Roman Empire app that nobody asked for but everyone gets. Includes:
+- Humorous Roman names (ChatGPT was involved)
+- Loading animations that change messages (to hide the void)
+- Ancient Roman aesthetic (Comic Sans was considered)
+- One-click fate consultation (RNG gods decide your evening)
 
-### 4. Tinder (Activity Finder)
-Activity-based social connection app using swipe mechanics. Features:
-- Card stack with swipe animations (Framer Motion)
-- Group chat system
-- Activity details with location
-- Profile management
+### Tinder (Activity Finder)
+We swiped left on originality and made Tinder for activities. Contains:
+- Card stack with swipe animations (Framer Motion did the heavy lifting)
+- Group chat system (for coordinating poor life choices)
+- Activity details with locations (Google Maps integration TBD)
+- Profile management (change your name, live your truth)
 
-## 📦 Technologies Used
+## Available Scripts (The Usual Suspects)
 
-- **Next.js 16** - React framework with App Router
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Tailwind CSS v4** - Utility-first CSS framework
-- **Framer Motion** - Animation library
-- **Lucide React** - Icon library
-- **PostCSS** - CSS processing
+- `npm run dev` - Start development server (your new best friend)
+- `npm run build` - Build for production (why would you do this)
+- `npm run start` - Start production server (seriously though, why)
+- `npm run lint` - Run ESLint (prepare for disappointment)
 
-## 🎨 Custom Styling
+## Development Notes (AKA What We Learned)
 
-The app includes custom CSS for:
-- Hand-drawn borders (Locaylo)
-- Paper texture effects
-- Radar animations
-- Custom scrollbars
-- Smooth transitions
+- Next.js App Router is cool but the learning curve is real
+- Client components everywhere because we like interactivity
+- Tailwind CSS v4 with @import syntax (breaking changes are fun!)
+- Custom fonts from Google Fonts (because default fonts are for quitters)
+- Each prototype is self-contained (no spaghetti code... mostly)
+- TypeScript kept us honest (when we didn't use `any`)
 
-## 🚧 Development Notes
+## Custom Styling (The Crimes We Committed)
 
-- Uses Next.js App Router for file-based routing
-- Client components used for interactive prototypes
-- Tailwind CSS v4 with @import syntax
-- Custom fonts loaded from Google Fonts
-- All prototypes are fully self-contained
+We added custom CSS for:
+- Hand-drawn borders (filter: url('#squiggly'))
+- Paper texture effects (background-image goes brrr)
+- Radar animations (keyframes on keyframes)
+- Custom scrollbars (because default scrollbars are ugly)
+- Smooth transitions (transition: all 0.3s ease)
 
-## 📝 Scripts
+## Course Information (The Reason This Exists)
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+**MSE 343 - Human-Computer Interaction**  
+Milestone 4 - Design Process Prototypes  
+Created with coffee, anxiety, and questionable life choices.
 
-## 🎓 Course Information
+## Final Thoughts
 
-Created for **MSE 343 - Human-Computer Interaction**  
-Milestone 4 - Design Process Prototypes
+If you're reading this far into the README, you either:
+1. Are grading this (hi professor!)
+2. Are genuinely interested (why?)
+3. Have nothing better to do (same)
+
+Each prototype demonstrates different design patterns and interaction models. Or at least, that's what we'll say in the presentation. In reality, we just wanted to try different things and see what stuck.
+
+This project is proof that you can absolutely over-engineer a class assignment and somehow make it work. Is it perfect? No. Does it function? Mostly. Are we proud of it? Ask us after we get the grade.
 
 ---
 
-**Note**: Each prototype demonstrates different design patterns and interaction models, providing a comprehensive showcase of modern web application design approaches.
-
+**Disclaimer**: Any resemblance to actual, functional applications is purely coincidental. No real users were harmed in the making of these prototypes. Side effects may include excessive scrolling, uncontrollable swiping, and an inexplicable desire to visit ancient Rome.
