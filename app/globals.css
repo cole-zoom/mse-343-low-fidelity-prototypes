@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --blue-frame: #2c55db;
+  --paper-white: #fdfbf7;
+  --ink-color: #222;
+  --pencil-gray: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Locaylo Stop Motion Styles */
+.paper-font {
+  font-family: 'Indie Flower', cursive;
+}
+
+/* Wobbly hand-drawn border effect */
+.hand-drawn-border {
+  border: 2px solid var(--ink-color);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.hand-drawn-box {
+  border: 3px solid var(--ink-color);
+  border-radius: 2% 4% 3% 5% / 3% 2% 5% 4%;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.hand-drawn-btn {
+  transition: all 0.2s ease;
+}
+.hand-drawn-btn:active {
+  transform: scale(0.95);
+}
+
+/* Radar Animation */
+.radar-sweep {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 0%, transparent 80%, rgba(44, 85, 219, 0.4) 100%);
+  animation: radar-spin 2s infinite linear;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+.blip {
+  animation: blink 2s infinite;
+}
+
+/* Paper texture pattern */
+.paper-texture {
+  background-color: var(--paper-white);
+  background-image: linear-gradient(#f0f0f0 1px, transparent 1px);
+  background-size: 100% 30px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Custom Scrollbar for Tinder prototype */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
