@@ -2,6 +2,8 @@
 
 Welcome to our collection of low-fidelity prototypes for MSE 343 (Human-Computer Interaction). This is a Next.js web app that exists to house four (4) interactive prototypes that we made for class. Well, "made" is a strong word. Let's say "prompted into existence."
 
+Check it out [here](https://mse-343-low-fidelity-prototypes.vercel.app/)
+
 ## What Even Is This
 
 This is a web app that showcases 4 prototypes that range from "questionably functional" to "surprisingly decent" and everything in between. We were supposed to explore the iterative design process of establishing requirements, designing alternatives, prototyping, and evaluation. Instead, we made these.
